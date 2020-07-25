@@ -28,5 +28,5 @@ export function authWithEmailAndPassword(email, password) {
 		}
 	})
 		.then(response => response.json())
-		.then(data => console.log(data))
+		.then(data => data.idToken)
 }
